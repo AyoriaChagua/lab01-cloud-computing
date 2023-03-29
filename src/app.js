@@ -5,7 +5,7 @@ import { PORT } from "./config.js";
 const app = express();
 
 app.get("/", (req, res)=>{
-    res.send("Welcome to server")
+    res.send("<h1>Welcome to server</h1>")
 })
 
 app.get("/test", async (req, res)=>{
