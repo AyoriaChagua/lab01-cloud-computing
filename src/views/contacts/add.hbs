@@ -1,0 +1,24 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4  mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/contacts/add" method="POST">
+                        <div class="form-group mt-4">
+                            <input type="text" class="form-control" name="name_contact" placeholder="Name contact" autofocus>
+                        </div>
+                        <div class="form-group  mt-4">
+                            <input type="tel" class="form-control" name="phone_number"  placeholder="Phone number" maxlength="9"  required>
+                        </div>
+                        <div class="form-group  mt-4">
+                            <input type="hidden" class="form-control" name="user_id"  value={{user_id}} placeholder="Phone number" maxlength="9"  required>
+                        </div>
+                        <div class="form-group  mt-4 d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-success">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
